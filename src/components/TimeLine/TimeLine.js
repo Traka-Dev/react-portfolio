@@ -43,8 +43,13 @@ const Timeline = () => {
 
   return (
     <Section id='about'>
-      <SectionTitle>About Me</SectionTitle>
-      <SectionText>dhjfgds fdshj vfhjsdgv fhjgsd fvhgsdvf hjsdvhgvfhgsvfhgdvfsd</SectionText>
+      <SectionDivider />    
+      <SectionTitle main>About Me</SectionTitle>
+      <SectionText justify>
+      I'm Jorge Luis Jaime Sánchez AKA TrakaDev and since I remenber, I was crazy about computers becuase I saw the potencial they have to transform our live, so I started to learn about tech until I found out that I could develope my own tools then everything changed and became a self-taught developer learning PHP, HTML, CSS, SQL and then JAVA to develop android apps and multiplataform tools.
+      
+      After I could launch my first static web site, I started to learn about Cybersecurity to protect it and then becuase it was fun, and finally Javascript(frameworks).
+      </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, index) => (

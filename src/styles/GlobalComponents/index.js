@@ -61,6 +61,11 @@ export const SectionText = styled.p`
   font-weight: 300;
   padding-bottom: 3.6rem;
   color: rgba(255, 255, 255, 0.5);
+  text-align: ${(props) => (
+    props.justify ? 'justify' :
+    props.center ? 'center' :
+    'left'
+  )};
 
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 670px;
