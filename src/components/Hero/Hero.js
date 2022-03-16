@@ -14,7 +14,7 @@ const Hero = (props) => (
       <SectionText>
         I let my work speak for myself so I share my latest projects.
       </SectionText>
-      <Button onClick={() => window.location = 'https://google.com'}>Let's Work Together</Button>
+      <Button onClick={() => window.location = '#contact'}>Let's Work Together</Button>
     </LeftSection>
   </Section>
 );

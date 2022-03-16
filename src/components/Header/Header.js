@@ -35,13 +35,13 @@ const Header = () =>  (
       </li>
     </Div2>
     <Div3>
-      <SocialIcons href='https://github.com'>
+      <SocialIcons href='https://github.com/Traka-Dev' target='_blank' rel='nofollow'>
         <AiFillGithub size='3rem' />
       </SocialIcons>
-      <SocialIcons href='https://linkedin.com'>
+      <SocialIcons href='https://www.linkedin.com/in/jorge-luis-jaime-s%C3%A1nchez-6a136a75/' target='_blank' rel='nofollow'>
         <AiFillLinkedin size='3rem' />
       </SocialIcons>
-      <SocialIcons href='https://twitter.com'>
+      <SocialIcons href='https://twitter.com/trakadev' target='_blank' rel='nofollow'>
         <AiFillTwitterSquare size='3rem' />
       </SocialIcons>
     </Div3>

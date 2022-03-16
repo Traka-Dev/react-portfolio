@@ -8,26 +8,26 @@ const Footer = () => {
   return (
     <FooterWrapper>
       <LinkList>
-        <LinkColumn>
+        <LinkColumn id='contact'>
           <LinkTitle>Let's Chat</LinkTitle>
-          <LinkItem href='https://discord.gg/jwmxMcdxrj'>Discord</LinkItem>
+          <LinkItem href='https://discord.gg/jwmxMcdxrj'>Discord Server</LinkItem>
         </LinkColumn>
         <LinkColumn>
           <LinkTitle>Email</LinkTitle>
-          <LinkItem href='mailto:jorge.jaime@protonmail.com'>trakadev@protonmail.com</LinkItem>
+          <LinkItem href='mailto:trakadev@protonmail.com'>trakadev@protonmail.com</LinkItem>
         </LinkColumn>
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
           <Slogan>Innovating one project at the time</Slogan>
         </CompanyContainer>
-        <SocialIcons href='https://github.com'>
+        <SocialIcons href='https://github.com/Traka-Dev' target='_blank' rel='nofollow'>
           <AiFillGithub size='3rem' />
         </SocialIcons>
-        <SocialIcons href='https://linkedin.com'>
+        <SocialIcons href='https://www.linkedin.com/in/jorge-luis-jaime-s%C3%A1nchez-6a136a75/' target='_blank' rel='nofollow'>
           <AiFillLinkedin size='3rem' />
         </SocialIcons>
-        <SocialIcons href='https://twitter.com'>
+        <SocialIcons href='https://twitter.com/trakadev' target='_blank' rel='nofollow'>
           <AiFillTwitterSquare size='3rem' />
         </SocialIcons>
       </SocialIconsContainer>
