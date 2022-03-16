@@ -29,6 +29,7 @@ export const projects = [
   {
     title: 'E-Commerce',
     description: "This website was build with Wordpress for the client to admin without any tech skills and have a fully customized product",
+    long_desc: "The first thing I ask a client who wants a Ecommerce website it's how much visit and customers do you expect to have so I can provide a good solution. In this case they wanted a web site to sell only in México and they wanted a custom solution so I suggested to start with WooCommerce since the have physical stores around the country and they wanted a very specifict fetures that no templated basesd store would provide.<salto>I usually recomend for new business to use Shopify to help them with the logistics and Payment Gateways since it\'s expencive to certify a custom solutions to comply with PCI DSS. I usually recomned get Stripe, Paypal and OnePay for Mexican projects.<salto>The gretest challange in this project wast to implement a graphic product customization section to see the change on colors and material of the products so you could see how the product will look like and get it custome made for you. I acomplished that using js vanilla on top Wordpress Api to integrate it to WooCommerce.",
     image: '/images/ecommerce.png',
     tags: ['JavaScript', 'Wordpress', 'PHP'],
     source: '#',
