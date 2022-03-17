@@ -56,9 +56,11 @@ const ProjectDetails = () =>{
         const desc = project.long_desc.split('<salto>')
         return(   
             <>
-            <SectionTitle main>{project.title}</SectionTitle>            
+            <SectionTitle main>{project.title}</SectionTitle> 
+            <div style={{margin:'10px'}}>           
             {desc.map(e => (<SectionText justify key={e.id}>{e}</SectionText>))}                                       
             {hasLink(project.visit)}
+            </div>
             </>
         )
     }  

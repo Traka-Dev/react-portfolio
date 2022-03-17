@@ -13,6 +13,7 @@ export const SectionLink = styled.section`
     padding-bottom: 24px;
  }
  @media ${(props) => props.theme.breakpoints.sm} {
+    max-width: 100%;
     font-size: 16px;
     line-height: 24px;
     padding-bottom: 16px;
