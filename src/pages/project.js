@@ -1,7 +1,7 @@
 import ProjectDetails from '../components/ProjectDetails/ProjectDetails';
 import { Layout } from '../layout/Layout';
 
-const Project = (props) => {
+const Project = () => {
   return (
     <Layout>      
       <ProjectDetails />
