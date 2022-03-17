@@ -21,6 +21,7 @@ const Footer = () => {
         <CompanyContainer>
           <Slogan>Innovating one project at the time</Slogan>
         </CompanyContainer>
+        <div style={{display: "flex", justifyContent: 'space-around'}}>
         <SocialIcons href='https://github.com/Traka-Dev' target='_blank' rel='nofollow'>
           <AiFillGithub size='3rem' />
         </SocialIcons>
@@ -30,6 +31,7 @@ const Footer = () => {
         <SocialIcons href='https://twitter.com/trakadev' target='_blank' rel='nofollow'>
           <AiFillTwitterSquare size='3rem' />
         </SocialIcons>
+        </div>
       </SocialIconsContainer>
     </FooterWrapper>
   );
