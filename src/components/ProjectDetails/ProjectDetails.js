@@ -35,7 +35,10 @@ const ProjectDetails = () =>{
                 project = projects.find(index => index.id === 0);                                               
                 break
             default:
-                return (<SectionTitle main>Contact Me</SectionTitle>)                
+                return (
+                <div style={{ minHeight: '50vh', display: 'flex', justifyContent: 'center'}}>
+                    <SectionTitle main>Contact Me</SectionTitle>
+                </div>)                
         }   
 
         const hasLink = (link) => {
