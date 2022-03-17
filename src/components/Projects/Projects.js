@@ -4,6 +4,19 @@ import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag,
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
 
+const hasbutton = (visit, source) => {
+  let valid = true;
+  if( visit === '' || visit === undefined || visit === ' ' || visit === null) valid = false;
+  return (
+    <>
+    <UtilityList>    
+      {valid ? <ExternalLinks href={visit} target='_blank' rel='nofollow'>Visit</ExternalLinks> : null}
+      <ExternalLinks href={source}>Details</ExternalLinks>
+    </UtilityList>
+    </>
+  )
+}
+
 const Projects = () => (
   <Section nopadding id='projects'>
     <SectionDivider/>
@@ -25,10 +38,7 @@ const Projects = () => (
               ))}
             </TagList>
           </div>
-          <UtilityList>
-            <ExternalLinks href={visit}>Details</ExternalLinks>
-            <ExternalLinks href={source}>Source</ExternalLinks>
-          </UtilityList>
+          {hasbutton(visit, source)}
         </BlogCard>
       ))}
     </GridContainer>

@@ -48,7 +48,7 @@ const ProjectDetails = () =>{
             }     
             return (      
             <SectionLink>
-                <ExternalLinks href={link}>Visit</ExternalLinks>
+                <ExternalLinks href={link} target='_blank' rel='nofollow'>Visit</ExternalLinks>
             </SectionLink>
             );
         }
