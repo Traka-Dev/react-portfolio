@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Link from 'next/link';
 import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
@@ -11,7 +11,9 @@ const hasbutton = (visit, source) => {
     <>
     <UtilityList>    
       {valid ? <ExternalLinks href={visit} target='_blank' rel='nofollow'>Visit</ExternalLinks> : null}
-      <ExternalLinks href={source}>Details</ExternalLinks>
+      <Link href={source} passHref>
+        <ExternalLinks >Details</ExternalLinks>
+      </Link>
     </UtilityList>
     </>
   )

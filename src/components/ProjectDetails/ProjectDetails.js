@@ -43,11 +43,7 @@ const ProjectDetails = () =>{
 
         const hasLink = (link) => {
             if( link === '' || link === undefined || link === ' ' || link === null) {
-                return (
-                <SectionLink hidden>
-                    <ExternalLinks href={link}>Visit</ExternalLinks>
-                </SectionLink>
-                );
+                return null;
             }     
             return (      
             <SectionLink>
@@ -59,11 +55,9 @@ const ProjectDetails = () =>{
         const desc = project.long_desc.split('<salto>')
         return(   
             <>
-            <SectionTitle main>{project.title}</SectionTitle> 
-            <div style={{margin:'10px'}}>           
+            <SectionTitle main>{project.title}</SectionTitle>                        
             {desc.map(e => (<SectionText justify key={e.id}>{e}</SectionText>))}                                       
-            {hasLink(project.visit)}
-            </div>
+            {hasLink(project.visit)}            
             </>
         )
     }  
