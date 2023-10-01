@@ -1,38 +1,57 @@
-import React from 'react';
-import Link from 'next/link';
-import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
-import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
-import { projects } from '../../constants/constants';
+import React from "react"
+import Link from "next/link"
+import {
+  BlogCard,
+  ExternalLinks,
+  GridContainer,
+  HeaderThree,
+  Hr,
+  Tag,
+  TagList,
+  TitleContent,
+  UtilityList,
+  Img,
+} from "./ProjectsStyles"
+import {
+  Section,
+  SectionDivider,
+  SectionTitle,
+} from "../../styles/GlobalComponents"
+import { projects } from "../../constants/projects"
 
 const hasbutton = (visit, source) => {
-  let valid = true;
-  if( visit === '' || visit === undefined || visit === ' ' || visit === null) valid = false;
+  let valid = true
+  if (visit === "" || visit === undefined || visit === " " || visit === null)
+    valid = false
   return (
     <>
-    <UtilityList>    
-      {valid ? <ExternalLinks href={visit} target='_blank' rel='nofollow'>Visit</ExternalLinks> : null}
-      <Link href={source} passHref>
-        <ExternalLinks >Details</ExternalLinks>
-      </Link>
-    </UtilityList>
+      <UtilityList>
+        {valid ? (
+          <ExternalLinks href={visit} target="_blank" rel="nofollow">
+            Visit
+          </ExternalLinks>
+        ) : null}
+        <Link href={source} passHref>
+          <ExternalLinks>Details</ExternalLinks>
+        </Link>
+      </UtilityList>
     </>
   )
 }
 
 const Projects = () => (
-  <Section nopadding id='projects'>
-    <SectionDivider/>
+  <Section nopadding id="projects">
+    <SectionDivider />
     <SectionTitle main>Projects</SectionTitle>
     <GridContainer>
-      {projects.map(({id, image, title, description, tags, source, visit}) => (
+      {projects.map(({ id, image, title, tags, source, visit }) => (
         <BlogCard key={id}>
-          <Img src={image}/>
+          <Img src={image} />
           <TitleContent>
             <HeaderThree title>{title}</HeaderThree>
-            <Hr />            
+            <Hr />
           </TitleContent>
-          <CardInfo>{description}</CardInfo>
-          <div style={{marginTop: '2rem'}}>
+          <div style={{ marginTop: "2rem" }}>
             <TitleContent>Stack</TitleContent>
             <TagList>
               {tags.map((tag, i) => (
@@ -42,9 +61,9 @@ const Projects = () => (
           </div>
           {hasbutton(visit, source)}
         </BlogCard>
-      ))}
+      )).reverse()}
     </GridContainer>
   </Section>
-);
+)
 
-export default Projects;
+export default Projects

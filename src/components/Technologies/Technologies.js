@@ -1,5 +1,6 @@
 import React from 'react';
-import { DiAndroid, DiApple, DiAppstore, DiFirebase, DiPhonegap, DiReact, DiZend } from 'react-icons/di';
+import { DiApple, DiFirebase, DiReact } from 'react-icons/di';
+import {FaEthereum} from 'react-icons/fa'
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
@@ -22,14 +23,21 @@ const Technologies = () =>  (
         <DiFirebase size='3rem'/>
         <ListContainer>
           <ListTitle>Back-End</ListTitle>
-          <ListParagraph>Expreince with <br/> Node and Databases</ListParagraph>
+          <ListParagraph>Expreince with <br/> Node and PHP</ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
         <DiApple size='3rem'/>
         <ListContainer>
-          <ListTitle>App Dev</ListTitle>
+          <ListTitle>Mobile Dev</ListTitle>
           <ListParagraph>Expreince with <br/> React Native</ListParagraph>
+        </ListContainer>
+      </ListItem>
+      <ListItem>
+        <FaEthereum size='3rem'/>
+        <ListContainer>
+          <ListTitle>Web3</ListTitle>
+          <ListParagraph>Expreince with <br/> Dapps and Solidity</ListParagraph>
         </ListContainer>
       </ListItem>
     </List>

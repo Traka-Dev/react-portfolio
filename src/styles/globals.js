@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'styled-normalize';
 
-const GlobalStyles = createGlobalStyle`
+const GlobalStyles = createGlobalStyle `
   ${normalize};
 
   * {
@@ -17,7 +17,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     font-family: ${props => props.theme.fonts.main};
     font-size: 1.6rem;
-    background: ${props => props.theme.colors.background1};
+    background: ${props => props.theme.colors.background1};    
     color: ${props => props.theme.colors.primary1};
     cursor: default;
 
